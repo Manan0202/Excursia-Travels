@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="CSS_External.css">	
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src='JavaScript_External.js'></script>
+    <title>Excursia | Contact</title>
+  </head>
+  <style>
+  .contact_nav{
+  text-align: center;
+  color: #EFF1F0;
+  height: 70px;
+  background: #000000;
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  transition: 1s;
+}
+
+#contact_heading{
+  position: absolute;
+  z-index: 100;
+  margin-left:48.3%;
+  font-size: 30px;
+  color: black;
+  padding-bottom:20px;
+  border-bottom:2px solid #000000;
+}
+
+#contact_text{
+  position: absolute;
+  z-index: 100;
+  font-size: 30px;
+  color: black;
+  margin-left:10%;
+  margin-right:80px;
+  font-size:120%;
+}
+
+.form {
+	margin-top:50px;
+	margin-left:35%;
+	font-size:140%;
+}
+
+#field1{
+margin-left:20px;
+padding: 10px 10px;
+font-family:Roboto Light;
+width:420px;
+}
+
+#field2{
+margin-left:20px;
+padding: 10px 10px;
+font-family:Roboto Light;
+width:420px;
+}
+
+#query{
+padding: 10px 10px;
+font-family:Roboto Light;
+width:512px;
+}
+
+  </style>
+  <body onload="scrollToTop()">
+  
+  	<!--Header-->
+    <div class="contact_nav"><br>
+		<span id="hamburger" onclick="openNav()">&#9776;</span>
+		<a href="index.html"><span id="excursia_title">Excursia</span></a><br>
+				<div id="NAVJS" class="menu">
+					<a href="javascript:void(0)" class="x" onclick="closeNav()">&times;</a>
+					<a href="explore.html">Explore</a>
+					
+					<a href="contact.html">Contact Us</a>
+					
+					<a href="faq.html">FAQ</a>
+					<a href="policy.html">Privacy Policy</a>
+				</div>
+	</div>
+	<!--Header-->
+	
+		<br><br><br><br><br>		
+		<div id="contact_heading">
+		Contact
+		</div>
+		
+		<br><br><br><br><br><br>
+		<div id="contact_text">
+		Facing issues? Please use our feedback form to get in touch with us. You can also contact us via our social media links given at the bottom.
+		</div>
+		<br><br><br><hr width=90%>
+		
+		<div class="form">
+		Name: <input required type="text" id="field1" placeholder="Enter your name here..." onFocus="this.placeholder = ''," onBlur="this.placeholder = 'Enter your name here...'"><br><br>
+		
+		Email: &nbsp;<input required type="text" id="field2" placeholder="Enter your Email ID here..." onFocus="this.placeholder=''" onBlur="this.placeholder = 'Enter your Email ID here...'"><br><br>
+		
+		Feedback: <br><br>
+		<textarea id="query" rows=10 style="resize:none;" placeholder="Enter your feedback..." onFocus="this.placeholder = ''" onBlur="this.placeholder = 'Enter your feedback...'"></textarea><br><br>
+		</div>
+		
+		<input type="button" id="sendbutton" onclick="check()" value="Send">
+		<br><br><br>
+			 
+		<!--Footer-->
+    <div id='footer'>
+		&copy; Copyright (c) 2017-2018 Excursia. All Rights Reserved. <span id="footer_divider">|</span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Follow us on:
+		<a href="https://www.twitter.com/" target="_blank"><img src="twitter1.png" onmouseover="this.src='twitter2.png'" onmouseout="this.src='twitter1.png'"></a>
+		<a href="https://www.instagram.com/" target="_blank"><img src="insta1.png" onmouseover="this.src='insta2.png'" onmouseout="this.src='insta1.png'"></a>
+		<a href="https://plus.google.com/" target="_blank"><img src="gplus1.png" onmouseover="this.src='gplus2.png'" onmouseout="this.src='gplus1.png'"></a>
+		<a href="https://www.facebook.com/" target="_blank"><img src="facebook1.png" onmouseover="this.src='facebook2.png'" onmouseout="this.src='facebook1.png'"></a>
+	</div>
+	<!--Footer-->	
+	
+</body>
+</html>
